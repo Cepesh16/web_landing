@@ -36,13 +36,15 @@ ul, li {
 
 .button {
   padding: 10px 25px;
-  margin: 0 10px;
+  margin-right: 20px;
   text-transform: uppercase;
   color: white;
   background: #00897b;
   border: 2px solid #00897b;
   transition: 0.3s;
   cursor: pointer; }
+  .button:last-child {
+    margin-right: 0; }
   .button:hover {
     background-color: transparent;
     border: 2px solid white; }
@@ -423,6 +425,10 @@ form button:hover {
 } */ }
   .post {
     margin-top: 10px; } }
+
+@media screen and (max-width: 768px) {
+  .button-box .button {
+    margin-bottom: 20px; } }
 
 @media screen and (max-width: 480px) {
   .header {

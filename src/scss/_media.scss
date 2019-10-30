@@ -39,6 +39,14 @@
 
 }
 
+
+// mobile
+@media screen and ( max-width: 768px ) {
+	.button-box .button {
+		margin-bottom: 20px;
+	}
+}
+
 // mobile
 @media screen and ( max-width: 480px ) {
 	
