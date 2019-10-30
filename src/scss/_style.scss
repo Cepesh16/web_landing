@@ -1,0 +1,493 @@
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+
+.menu-bar {
+	padding: 20px 0;
+	color: $color-dark;
+	background: $bg-white;
+}
+
+.menu__item {
+	margin-left: 37px;
+}
+
+.menu__item a {
+	font-size: 20px;
+	color: #212121;
+}
+
+.menu__item a:hover {
+	text-decoration: none;
+	color: $color-gray;
+}
+
+
+
+.header {
+	text-align: center;
+	padding: 180px 0;
+	background-image: url( '../../build/img/header.png');
+	background-size: cover;
+	background-position: 0 100%;
+	color: $color-white;
+}
+
+
+.header__title {
+	font-size: 55px;
+}
+
+
+.header__text {
+	font-size: 20px;
+	margin-bottom: 100px;
+}
+
+.button {
+	padding: 10px 25px;
+	margin: 0 10px;
+	text-transform: uppercase;
+	color: $color-white;
+	background: $bg-primary;
+	border: 2px solid $bg-primary;
+	transition:$transition;
+	cursor: pointer;
+
+	&:hover {
+		background-color: transparent;
+		border: 2px solid $bg-white;
+	}
+}
+
+
+
+.about {
+	padding-top: 120px;
+	padding-bottom: 125px;
+	text-align: center;
+	color: $color-black;
+	background: $bg-white;
+ }
+
+.about__title {
+	font: 30px;
+	font-weight: bold;
+}
+.about__text {
+	margin-bottom: 110px;
+	font: 15px;
+}
+
+
+.about__title--h3 {
+	margin-top: 30px;
+	margin-bottom: 20px;
+	font: 20px;
+}
+
+
+.services {
+	padding-top: 165px;
+	padding-bottom: 125px;
+	text-align: center;
+	background: $bg-primary-light;
+	color: $color-black;
+}
+
+
+.card {
+	margin-bottom: 30px;
+	padding: 50px 25px 40px;
+	background: $bg-white;
+	transition: $transition;
+}
+
+.card:hover {
+	background: $bg-primary;
+	color: $color-white;
+	box-shadow: 0px 10px 12px -3px rgba( 0, 0, 0, .26 );
+}
+
+.card:hover .card__icon {
+	color: $color-white;
+}
+
+.card__icon {
+	font-size: 60px;
+	color: $color-black;
+	transition: $transition;
+}
+
+.card:hover .card__button {
+	color: $color-white;
+	border: 2px solid  $bg-white;
+}
+
+.card__button {
+	padding: 14px 12px 14px;
+	text-transform: uppercase;
+	color: $color-black;
+	border: 2px solid  $bg-black;
+	background: transparent;
+	transition: $transition;
+}
+
+.card__button:hover {
+	cursor: pointer;
+}
+
+
+// SECTION
+.portfolio {
+	padding-top: 120px;
+	padding-bottom: 135px;
+	text-align: center;
+	transition: 5s;
+}
+
+.portfolio button {
+	transition: $transition;
+}
+
+.portfolio button:hover {
+	color: $color-black;
+	border: 2px solid $bg-primary;
+	background: transparent;
+}
+
+.button-box {
+	// transition: 2s;
+}
+.button[val="on"] {
+	color: $color-black;
+	background: $bg-white;
+}
+
+.portfolio img {
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.filter {
+	min-height: 620px;
+	padding: 120px 0;
+	transition: 1s;
+}
+
+.filter div[filter]:hover img {
+	filter: brightness( 50% );
+	transition: $transition;
+}
+
+.filter div[filter]:hover .text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate( -50%, -50% );
+	display: block;
+	color: $color-white;
+}
+
+.text {
+	display: none;
+}
+
+
+// SECTION PRICING
+.pricing {
+	padding-top: 165px;
+	padding-bottom: 125px;
+	text-align: center;
+	color: $color-black;
+	background: $bg-snow;
+}
+
+.price {
+	margin-bottom: 30px;
+	background: $bg-white;
+	transition: $transition;
+}
+.price:hover {
+	box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, .5);
+}
+.price__head {
+	padding: 40px 65px;
+	max-height: 211px;
+	font-size: 25px;
+	color: $color-white;
+	background-image: url( '../../build/img/pricing_bg.png' );
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.price__head {
+	font-size: 50px;
+}
+
+.price__head sup {
+	vertical-align: middle;
+	font-size: 25px;
+}
+.price__head sub {
+	vertical-align: middle;
+	font-size: 17px;
+}
+
+.price__body {
+	font-size: 17px;
+	color: $color-dark;
+}
+.price__body li {
+	padding: 28px 12px;
+	margin: 0 auto;
+	max-width: 175px;
+	border-bottom: 1px solid $bg-silver;
+}
+
+.price__footer {
+	padding: 60px;
+}
+
+.price__footer button {
+	padding: 15px 30px;
+	font-size: 20px;
+	color: $color-dark;
+	background-color: transparent;
+	border: 2px solid $bg-dark;
+	transition: $transition;
+}
+.price__footer button:hover {
+	color: $color-white;
+	background: $bg-primary;
+	border: 2px solid transparent;
+}
+
+
+
+/* SECTION TEAM */
+.team {
+	padding-top: 165px;
+	padding-bottom: 125px;
+	text-align: center;
+	color: $color-black;
+	background: $bg-white;
+}
+
+.team img {
+	width: 100%;
+}
+
+.team h4 {
+	margin-top: 30px;
+	font-size: 20px;
+}
+
+.team p {
+	font-size: 15px;
+	margin-bottom: 30px;
+}
+
+.icons i {
+	transition: $transition;
+}
+.icons i:nth-child(1) {
+	color: $color-snow;
+}
+
+.icons i:nth-child(2) {
+	color: $color-primary;
+}
+
+.icons a:hover i:nth-child(1) {
+	color: $color-primary;
+}
+
+.icons a:hover i:nth-child(2) {
+	color: $color-snow;
+}
+
+.owl-theme .owl-dots {
+	padding-top: 30px;
+}
+.owl-theme .owl-dots .owl-dot span {
+	transition: $transition;
+	// background: ;
+}
+.owl-theme .owl-dots .owl-dot.active span {
+	background: $bg-primary;
+}
+
+.blog {
+	@extend .services;
+}
+
+.blog .about__title,
+.blog .about__text {
+	text-align: center;
+}
+
+.blog img {
+	width: 100%;
+}
+
+.order-left > div:first-child {
+	order: 1;
+}
+.order-left > div:last-child {
+	order: 2;
+}
+
+.order-right > div:first-child {
+	order: 2;
+}
+.order-right > div:last-child {
+	order: 1;
+}
+
+.post {
+	margin-top: 60px;
+	padding: 0 15px;
+	text-align: left;
+}
+.post div {
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+.post a {
+	font-size: 25px;
+	font-weight: bold;
+	color: $color-primary;
+}
+.post a:hover {
+	text-decoration: none;
+}
+.post span {
+	font-size: 17px;
+	margin-right: 35px;
+}
+.post p {
+	font-size: 15px;
+}
+
+.button-blog {
+	width: 220px;
+	height: 70px;
+	margin-top: 125px;
+	text-transform: uppercase;
+	color: $color-white;
+	background: $bg-primary;
+	border: 2px solid $bg-primary;
+	transition: $transition;
+}
+.button-blog:hover {
+	background: $bg-primary-light;
+	color: $color-black;
+	border: 2px solid $bg-primary;
+}
+
+
+.footer {
+	padding-top: 165px;
+	padding-bottom: 125px;
+	text-align: center;
+	color: $color-white;
+	background-image: url( '../../build/img/footer.png' );
+	background-size: cover;
+}
+
+.footer i {
+	font-size: 62px;
+	color: $color-white;
+}
+
+.circle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100px;
+	height: 100px;
+	margin: 0px auto 35px;
+	background: $bg-secondary;
+	border-radius: 50%;
+}
+.circle + p {
+	font-size: 20px;
+}
+
+
+form {
+	margin-top: 70px;
+}
+form input,
+form textarea {
+	width: 100%;
+	padding: 30px;
+	border-radius: 10px;
+	border: none;
+}
+
+form input:focus,
+form textarea:focus,
+button:focus {
+	outline: none;
+}
+
+form input {
+	margin-bottom: 30px;
+}
+
+form textarea {
+	margin-bottom: 30px;
+	resize: none;
+}
+
+form button {
+	padding: 20px 80px;
+	font-size: 20px;
+	text-transform: uppercase;
+	background: $bg-white;
+	border: none;
+	border-radius: 10px;
+	transition: $transition;
+}
+
+form button:hover {
+	background: $bg-primary;
+	color: $color-white;
+}
+
+
+
+.copyright {
+	padding: 20px;
+	font-weight: 600;
+	text-align: center;
+}
+
+
+
+
+#toTop {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	z-index: 999;
+	display: none;
+
+	width: 50px;
+	height: 50px;
+	padding: 10px;
+	font-size: 20px;
+	text-align: center;
+	color: $color-black;
+	background: #00897b;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: $transition;
+}
+#toTop:hover {
+	color: $color-white;
+}
